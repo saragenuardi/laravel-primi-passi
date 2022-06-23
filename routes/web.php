@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () { 
     return view('home');
-});
+}) ->name('home');
+
+Route::get('/servizi', function () {
+    return view('servizi');
+}) ->name ('servizi');
+
+Route::get('/contatti', function () {
+    return view('contatti');
+}) ->name ('contatti');
+
+Route::get('/foto', function () {
+    return view('foto');
+}) ->name ('foto');
